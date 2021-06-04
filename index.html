@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="css/styles.css" rel="stylesheet" type="text/css" />
+ <link href="https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+<title>Myweb</title>
+<style>
+header{
+	background:url("img/bg.jpg");
+	background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+  @media screen and (max-width: 650px){
+    header{min-height:370px}
+ }
+ footer{
+		 margin-top: 0px;
+	 }
+</style>
+</head>
+
+<body>
+ <header>
+   <div class="navbar-fixed">
+    <nav class="nav-warpper barcolor">
+        <div class="container">
+        <a href="index.html" class="brand-logo"><b>BALLOON</b></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="myslef.html" >Myself</a></li>
+           <li><a href="favorite.html" >Favorite </a></li>
+           <li><a href="timetable.html" >Timetable </a></li>
+            <li><a href="cartoon.html" > Cartoon </a></li>
+            <li><a href="link.html" class="btn waves-effect waves-dark">Link</a></li>
+         </ul>
+        
+        <a href="!#" class="sidenav-trigger" data-target="slide-out"><i class="material-icons">menu</i></a>
+        </div>
+       </nav> 
+   </div>
+   <ul class="sidenav" id="slide-out">
+    <li><a href="myslef.html" >Myself</a></li>
+    <li><a href="favorite.html" >Favorite </a></li>
+    <li><a href="timetable.html" >Timetable </a></li>
+     <li><a href="cartoon.html" > Cartoon </a></li>
+     <li><a href="link.html" class="btn waves-effect waves-dark">Link</a></li>
+  </ul>
+</header>
+
+<section class="container" class="center-align">
+  <div class="center-align">
+    <hr class="new1" width="40%">
+    <img class="me" src="img/id.png"/>
+     <h1><b>Balloon</b></h1>
+     <h4 style="color: #50686b;">From KYD<br>5A   17</h4>
+     <h3 style="color:#2c5d63;"><b><u>About me</u></b></h3>
+     <p style="color: #50686b;">
+       Hi ! My name is Pak Lun.
+       <br>I am living in Hong Kong and 
+       <br>currently studying at 
+       <br>TWGHs. Kap Yan Directors' College.
+       <br>My hobby is drawing but 
+      <br>still self-learning it now.
+     </p>
+    <hr class="new1" width="45%">
+  </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav({closeOnClick: true});
+
+    });
+    $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 950);
+       });
+  </script>
+</body>
+<footer>
+ <p>bulit in 2019</p>
+</footer>
+</html>
+

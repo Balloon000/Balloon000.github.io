@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="css/styles.css" rel="stylesheet" type="text/css" />
+ <link href="https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+ <link href="css/animation.css" rel="stylesheet" /> 
+<style>
+p{
+  font-size: 0.7em;
+}
+h3{
+  margin-top: 70px;
+}
+
+</style>
+</head>
+ 
+ <body>
+  <header>
+    <div class="navbar-fixed">
+     <nav class="nav-warpper barcolor1">
+         <div class="container">
+         <a href="index.html" class="brand-logo"><b>BALLOON</b></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="myslef.html" >Myself</a></li>
+            <li><a href="favorite.html" >Favorite </a></li>
+            <li><a href="timetable.html" >Timetable </a></li>
+             <li><a href="cartoon.html" > Cartoon </a></li>
+             <li><a href="link.html" class="btn waves-effect waves-dark">Link</a></li>
+          </ul>
+         
+         <a href="!#" class="sidenav-trigger" data-target="slide-out"><i class="material-icons">menu</i></a>
+         </div>
+        </nav> 
+    </div>
+    <ul class="sidenav" id="slide-out">
+     <li><a href="myslef.html" >Myself</a></li>
+     <li><a href="favorite.html" >Favorite </a></li>
+     <li><a href="timetable.html" >Timetable </a></li>
+      <li><a href="cartoon.html" > Cartoon </a></li>
+      <li><a href="link.html" class="btn waves-effect waves-dark">Link</a></li>
+   </ul>
+ </header>
+    
+    <div class="parallax-container">
+        <div class="parallax">
+        <img src="img/AnimeFrance-histoire.jpg" class="responsive-img">
+      </div>
+    </div>
+    
+  
+    <div id="modal1"class="modal">
+      <div class="closeBtn2 modal-close">&times;</div>
+    <div class="modal-content" style="padding-left:3em;">
+      <p>Try to put your cursor on the title of those paragraph!</p>
+	  <div style="font-size:0.6em">These character pictures were drawn by me.</div>
+    </div>
+    </div>	
+  
+  
+  
+  
+    <div class="container">
+    <div class="row">
+      <h1 class="col s12">Favorite Characters</h1>
+     
+     <div class="col s12">
+      <img class="responsive-img col s12 l3 bakugo" id="bakugo" src="img/cartoon/bakugo.png">
+      <div class="col s12 l8 offset-l1">
+       <h3 id="bh">No.1  Bakugo Katsuki</h3>
+       <p>
+        Katsuki is a crude, arrogant, short-tempered, and aggressive person, especially at the beginning of the series. 
+        Determined and thirsty for victory, Katsuki smiles eerily when in the middle of a battle. He is incredibly focused on 
+        achieving his own authentic victories and has learned to never underestimate his opponents. Katsuki is not only very 
+        athletic and talented at fighting, but also very intelligent and extremely perceptive, capable of strategic planning
+         and quick improvising. Moreover, Katsuki's grades are among the highest of his class and he has displayed surprising 
+         talent in other areas, like cooking or music. Overall, he's considered a natural-born genius with potential to be one of the best Pro Heroes around. 
+       </p>
+      </div>
+     </div>
+    
+    <div class="col s12">
+
+      <div class="col s12 l8 " style="margin-bottom: 30px;">
+        <h3 id="rh">No.2  Rick Sanchez</h3>
+        <p>
+          Rick is a genius scientist, capable of creating complex scientific inventions, including brain-enhancing helmets, 
+          dream-invading devices, portals to several different dimensions, and the world's first amusement park inside the 
+          body of a living human. His brilliance can be muddled by his jaded personal views and his alcoholic tendencies.
+        </p>
+      </div>
+      <img class="responsive-img col s12 l4 rick"  id="rick" src="img/cartoon/rick.png">
+    </div>
+      
+    <div class="col s12">
+       <img class="responsive-img col s12 l3 spider " id="spider" src="img/cartoon/spider.png">
+       <div class="col s12 l8 offset-l1" style="margin-bottom: 50px;">
+        <h3 id="sh">No.3  Spiderman</h3>
+        <p>
+         "Peter Parker" and "Spidey" redirect here. For other people, see Peter Parker (disambiguation). For the comic book series, 
+		 see The Amazing Spider-Man. For subsequent versions of the character, see List of incarnations of Spider-Man.
+		  For other uses, see Spider-Man (disambiguation).
+        </p>
+       </div>
+      </div>
+  </div>
+
+    </div>
+    
+ 
+    
+    <footer>
+        <p>bulit in 2019</p>
+         </footer>
+         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+         <script>
+           $(document).ready(function(){
+            $('.parallax').parallax();
+            $('.sidenav').sidenav({closeOnClick: true});
+           
+            $("#bh").mouseenter(function(){
+              $("#bakugo").fadeToggle();
+             });
+
+             $("#rh").mouseenter(function(){
+              $("#rick").fadeToggle();
+             });
+
+             $("#sh").mouseenter(function(){
+              $("#spider").fadeToggle();
+             });
+
+             $('.modal').modal();
+              	$(document).ready(function(){
+             $('.modal').modal('open');
+             });
+
+           }); 
+         </script>
+</body>
+</html>

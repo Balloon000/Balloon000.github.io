@@ -1,0 +1,39 @@
+.road{
+    height: 500px;
+
+
+}
+.oldskin2{
+ height: 10%;
+ width: 10%;
+ animation-name: walk;
+ animation-duration: 18s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+div{
+    font-size: 1.05em;
+}
+.col{
+    color: #50686b;
+}
+h3{
+    color: #2c5d63;
+}
+
+@keyframes walk{
+    from{transform: translateX(-200px);}
+    to{transform: translateX(2000px);}
+}
+
+
+
+.bakugo{
+    display: none;
+}
+.rick{
+    display: none;
+}
+.spider{
+    display: none;
+}
